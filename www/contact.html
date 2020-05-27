@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <link rel="stylesheet" href="./application.css">
+  <script src="form.js"></script>
+  <title>Contact-All Details of Coffee Company|Mr.Coffee </title>
+  <body>
+    <div class="container">
+      <!--Start Header -->
+      <div id="header">
+        <header>
+          <img class="logo" src="assets/full_logo_white.png" alt="whitelogo"/>
+          <nav>
+            <ul class="navigation">
+              <li><a href="index.html">Accueil</a></li> 
+              <li><a href="about.html">Qui sommes-nous?</a></li>
+              <li><a href="contact.html">Nous contacter</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+      <!-- End Header -->
+
+      <!--Start Section -->
+      <div id="section">
+        <section>
+          <div><img class="darklogo" src="assets/full_logo_dark.png" alt="darklogo"></div>
+          
+          <!-- Start of Form Element -->
+          <div><h1>Dites nous tout !</h1></div>
+          <div id="dialogoverlay"></div>
+          <div id="dialogboxcontainer">
+            <div id="dialogboxelements">
+              <div><img class="darklogo divdarklogo" src="assets/full_logo_dark.png" alt="darklogo"></div>
+              <div id="dialogboxmessage">
+                <div id="dialogboxheading1"></div>
+                <div id="dialogboxtext1"></div> 
+                <div id="dialogboxtext2"></div>
+              </div>
+             </div>
+            <div id="closebutton"></div>
+          </div>
+          
+          <div class="formcontainer">
+            <form id="form">
+              <div class="row">
+                <div class="firstelements">
+                  <label for="fname" > Nom <sup>*</sup></label>
+                </div>
+                <div>
+                  <input type="text" id="fname" name="Firstname" title="must be alphabets only" placeholder="Your name.." required pattern="^[a-zA-Z][a-zA-Z ]+[a-zA-Z]+$" oninvalid="InvalidMsg(this);" 
+                  oninput="InvalidMsg(this);" >
+                </div>
+              </div>
+  
+              <div class="row">
+                <div class="firstelements">
+                  <label for="lname">Prénom <sup>*</sup></label>
+                </div>
+                <div>
+                  <input type="text" id="lname" name="Lastname" placeholder="Your last name.." title="must be alphabets only" required pattern="^[a-zA-Z][a-zA-Z ]+[a-zA-Z]+$" oninvalid="InvalidMsg(this);" 
+                  oninput="InvalidMsg(this);">
+                </div>
+              </div>
+  
+              <div class="row">
+                <div class="firstelements">
+                  <label for="telephone">Téléphone </label>
+                </div>
+                <div>
+                  <input type="tel" id="telephone" name="Telephone" placeholder="Your Phone no.." title="Must be 9 numbers only" pattern="[0-9]{9}" maxlength="9">
+                 
+                </div>
+              </div>
+  
+              <div class="row">
+                <div class="firstelements">
+                  <label for="mailid">Adresse mail <sup>*</sup></label>
+                </div>
+                <div>
+                  <input id="mailid" name="MailAddress" title="must be valid email address" placeholder="Your email address ....." required pattern="^[a-zA-Z0-9.!#$%£&'*+/=?^_`{|}~-]+@[a-zA-Z]+(\.)+([a-zA-Z]+)*$" oninvalid="InvalidMsg(this);" 
+                  oninput="InvalidMsg(this);">
+                </div>
+              </div>
+  
+              <div class="row">
+                <div class="firstelements">
+                  <label for="message">Message <sup>*</sup></label>
+                </div>
+                <div >
+                  <textarea id="message" name="Message" placeholder="Your message.." title="must be minumi=um 20 characters long." required minlength="20" maxlength="900" oninvalid="InvalidMsg(this);" 
+                  oninput="InvalidMsg(this);"></textarea>
+                </div>
+              </div>
+  
+              <div >
+                <input type="submit" value="SEND" class="submitbutton">
+              </div>
+            </form>
+           
+          </div>
+           <!--End of Form-->
+          <div><h2>On vous attend !</h2></div>
+            <div class="addressblock">
+            <address>
+              <div>
+                <ul>
+                  <li><strong>Mr.Coffee </strong></li>
+                  <li>15 place Jules Guesde</li>
+                  <li>75006 Paris<br><br></li>
+                  <li>Tel : +33 9 46 25 78 45</li>
+                  <li>Mail : contact@mr-coffee.com</li>
+                </ul> 
+              </div> 
+            </address>
+          </div>
+          <div><img class="map" src="assets/map.png" alt="map"></div>
+        </section>
+      </div>  
+      <!--End Section-->
+   
+      <!--Start Footer -->
+      <footer>
+        <div><img class="logo" src="assets/full_logo_white.png" alt="whitelogo" /></div>
+        <div class="footercaption">
+          <p>Suivez nous sur les réseaux sociaux !</p>
+          <div class="footerlinks">
+            <ul>
+              <li><a href="https://www.linkedin.com/"><img class="footerimages" src="assets/logo_linkedin.png" alt="linkedinlogo" ></a></li>
+              <li><a href="https://www.twitter.com/"><img class="footerimages" src="assets/logo_twitter.png" alt="twitterlogo" ></a></li>
+              <li><a href="https://www.facebook.com/"><img class="footerimages" src="assets/logo_facebook.png" alt="facebooklogo" ></a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <!--End Footer -->
+    </div>
+  </body>
+</html>
