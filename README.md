@@ -23,9 +23,13 @@ All three pages have an active navigation bar (that allows you to navigate from 
 Technologies & tools used:
 
 Web Browser
+
 HTML5
+
 CSS
+
 Bootstrap4
+
 Javascript
 
 
