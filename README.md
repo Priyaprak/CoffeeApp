@@ -18,4 +18,21 @@ Functionalities
 
 All three pages have an active navigation bar (that allows you to navigate from one page to another), as well as a footer. 
 
+Technologies & tools used:
+
+Web Browser
+HTML5
+CSS
+Bootstrap4
+
+
+In the terminal clone the project
+
+
+Go to the folder 
+cd 
+
+Open index.html
+
+
 
