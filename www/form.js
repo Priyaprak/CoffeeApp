@@ -7,28 +7,22 @@ function InvalidMsg(textbox) {
     } else {
        textbox.setCustomValidity('');
     }
-
     return true;
 }
 
-//let myTempObjArr=[];
+
 //Function to display the custom popup
 const myFunctions = (ev)=>{
     ev.preventDefault();
-    console.log('Well, hello there!');
     let myTempObj={};
     var formelements=document.getElementById("form").elements;
         for(i in formelements){
              if((formelements[i].type)!='submit'||formelements[i]=='null'){
-                
                 myTempObj[formelements[i].name]=formelements[i].value;
              }
         }
-        //myTempObjArr.push(myTempObj);
-        console.log("Objects value is " + '\n' + JSON.stringify(myTempObj, '\t' , 1));
         var winW = window.innerWidth;
         var winH = window.innerHeight;
-        console.log("Window height : " +winH+"Window width: "+winW);
         var dialogoverlay = document.getElementById('dialogoverlay');
         var dialogbox = document.getElementById('dialogboxcontainer');
         dialogoverlay.style.display = "block";
